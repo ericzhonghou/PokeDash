@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "PokeDash", "PokeDash\PokeDash.sfproj", "{4343AA7D-0388-45E0-AF78-177214DD8151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeRest", "PokeRest\PokeRest.csproj", "{2E9A5B14-95EE-4B5C-90F8-E4465B26F231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeScan", "PokeScan\PokeScan.csproj", "{CC8AB158-F72C-4B0F-A7B9-D1D94A7CA8E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeUber", "PokeUber\PokeUber.csproj", "{278CE315-934C-427A-8B76-9E50186E24EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeRank", "PokeRank\PokeRank.csproj", "{713D8C96-52FC-46B5-A0EF-C7064107CDAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4343AA7D-0388-45E0-AF78-177214DD8151}.Debug|x64.ActiveCfg = Debug|x64
+		{4343AA7D-0388-45E0-AF78-177214DD8151}.Debug|x64.Build.0 = Debug|x64
+		{4343AA7D-0388-45E0-AF78-177214DD8151}.Debug|x64.Deploy.0 = Debug|x64
+		{4343AA7D-0388-45E0-AF78-177214DD8151}.Release|x64.ActiveCfg = Release|x64
+		{4343AA7D-0388-45E0-AF78-177214DD8151}.Release|x64.Build.0 = Release|x64
+		{4343AA7D-0388-45E0-AF78-177214DD8151}.Release|x64.Deploy.0 = Release|x64
+		{2E9A5B14-95EE-4B5C-90F8-E4465B26F231}.Debug|x64.ActiveCfg = Debug|x64
+		{2E9A5B14-95EE-4B5C-90F8-E4465B26F231}.Debug|x64.Build.0 = Debug|x64
+		{2E9A5B14-95EE-4B5C-90F8-E4465B26F231}.Release|x64.ActiveCfg = Release|x64
+		{2E9A5B14-95EE-4B5C-90F8-E4465B26F231}.Release|x64.Build.0 = Release|x64
+		{CC8AB158-F72C-4B0F-A7B9-D1D94A7CA8E3}.Debug|x64.ActiveCfg = Debug|x64
+		{CC8AB158-F72C-4B0F-A7B9-D1D94A7CA8E3}.Debug|x64.Build.0 = Debug|x64
+		{CC8AB158-F72C-4B0F-A7B9-D1D94A7CA8E3}.Release|x64.ActiveCfg = Release|x64
+		{CC8AB158-F72C-4B0F-A7B9-D1D94A7CA8E3}.Release|x64.Build.0 = Release|x64
+		{278CE315-934C-427A-8B76-9E50186E24EA}.Debug|x64.ActiveCfg = Debug|x64
+		{278CE315-934C-427A-8B76-9E50186E24EA}.Debug|x64.Build.0 = Debug|x64
+		{278CE315-934C-427A-8B76-9E50186E24EA}.Release|x64.ActiveCfg = Release|x64
+		{278CE315-934C-427A-8B76-9E50186E24EA}.Release|x64.Build.0 = Release|x64
+		{713D8C96-52FC-46B5-A0EF-C7064107CDAA}.Debug|x64.ActiveCfg = Debug|x64
+		{713D8C96-52FC-46B5-A0EF-C7064107CDAA}.Debug|x64.Build.0 = Debug|x64
+		{713D8C96-52FC-46B5-A0EF-C7064107CDAA}.Release|x64.ActiveCfg = Release|x64
+		{713D8C96-52FC-46B5-A0EF-C7064107CDAA}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

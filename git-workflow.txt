@@ -1,0 +1,52 @@
+GIT WORKFLOW ON THE COMMAND LINE
+
+1) Go to the branch you're working on ('frontend' or 'backend' probably)
+
+2) Decide on a single thing you're going to work on.
+
+3) Make a branch for that work item
+> git checkout -b <descriptive-name-of-branch>
+
+4) Do your code changes
+
+5) Check what files you've changed
+> git status
+
+6) See what those changes are (press 'q' to quit)
+> git diff
+
+7) stage your changes
+> git add -A
+--OR--
+> git add <filename>
+
+8) commit your changes
+> git commit -m "<describe your commit here>"
+
+9) Repeat 4-8 if there are additional code changes for this work item
+
+10) When you're ready to merge your changes with the group, checkout the main branch
+> git checkout <backend or frontend or whatever>
+
+11) Then pull any changes that other people have made
+> git pull
+
+    11.1) If there were any changes, you'll want to merge those into your branch.
+    > git checkout <descriptive-name-of-branch>
+    > git merge <descriptive-name-of-branch>
+
+    11.2) At this point, it may tell you that you have merge conflicts! Check out
+    https://githowto.com/resolving_conflicts for help with that. Once you're done
+    resolving conflicts, make sure too stage and commit your new changes.
+    > git add -A
+    > git commit -m "<message>"
+
+    11.3) Return to the main branch
+    > git checkout <backend or frontend or whatever>
+
+12) Repeat step 11 until the pull says "already up to date". Now it's time to
+merge into the main branch. This should happen without conflicts.
+> git merge <descriptive-name-of-branch>
+
+13) Now, finally, push your changes. You're back where you started, with updated code!
+> git push

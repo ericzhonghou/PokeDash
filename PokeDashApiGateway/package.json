@@ -1,0 +1,11 @@
+{
+  "name": "pokedashapi",
+  "version": "0.0.1",
+  "description": "pokedash api gateway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "micro service, macro awesome",
+  "license": "ISC"
+}

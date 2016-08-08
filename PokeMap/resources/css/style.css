@@ -1,0 +1,262 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+#container {
+  height: 100%;
+}
+#container.info-off #map-container {
+  top: 0;
+  height: 100%;
+}
+#container.info-off #info {
+  height: 0%;
+}
+#container.info-on #map-container {
+  top: 0;
+  height: 100%;
+}
+#container.info-on #info {
+  height: 4rem;
+}
+#container.info-full #map-container {
+  top: -25%;
+  height: 75%;
+}
+#container.info-full #info {
+  height: 50%;
+  background-color: white;
+}
+#container.info-full #info #info-title {
+  color: white;
+  background-color: #82C600;
+}
+#container #map-container {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  -webkit-transition-property: height, top;
+  transition-property: height, top;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+#container #map-container #map {
+  height: 100%;
+}
+#container #info {
+  box-shadow: -2px -2px 2px 1px rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  z-index: 1;
+  -webkit-transition-property: height, background-color;
+  transition-property: height, background-color;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+  overflow: hidden;
+}
+#container #info #info-title {
+  padding: 1rem 1rem 0rem 1rem;
+  transition: 0.5s ease-out;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: bold;
+}
+#container #info #info-title #info-name {
+  padding: none;
+  font-size: 2.5rem;
+}
+#container #info #info-subtitle {
+  box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: .5rem 1rem .25rem 1rem;
+  background-color: #619400;
+  color: white;
+}
+#container #info #info-subtitle #info-number {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  padding: none;
+  font-size: 1.5rem;
+}
+#container #info #info-subtitle #info-time-to-live {
+  padding-top: .25rem;
+  float: right;
+  font-size: 1rem;
+  font-family: 'Junction', sans-serif;
+  font-weight: normal;
+}
+#container #info .stats {
+  color: black;
+  padding: .5rem;
+  font-size: 1.85rem;
+  font-family: 'Junction';
+  transition: background-color 0.5s ease;
+}
+#container #info .timeBlink {
+  color: red;
+  padding: .5rem;
+  font-size: 1.75rem;
+  font-family: 'Junction';
+  transition: background-color 0.5s ease;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0.0;
+  }
+}
+#container #info .uber {
+  color: black;
+  font-size: 1rem;
+  font-family: 'Junction';
+  display: inline-block;
+}
+#container #info #uber-button {
+  color: white;
+  font-family: 'League Spartan';
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #82C600;
+  border-color: #619400;
+  border-width: 3px;
+  padding: .4rem .4rem 0rem .4rem;
+  border-style: solid;
+  text-decoration: none;
+  box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#container #info .uberTitle {
+  padding: .75rem;
+  font-size: 2.15rem;
+  font-family: 'Junction';
+  font-style: italic;
+  display: inline-block;
+}
+#container #info .info-icon {
+  display: inline-block;
+  font-family: 'icomoon';
+  font-size: 1.5rem;
+  position: relative;
+  bottom: -0.25rem;
+  height: 10px;
+  width: 10px;
+  padding: 1rem;
+  color: #82C600;
+}
+#container .info-icon a {
+  text-decoration: none;
+  font-family: 'icomoon';
+  font-size: 2rem;
+  height: 10px;
+  width: 10px;
+  color: #82c600;
+}
+.poke-marker {
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: black;
+  border-radius: 5rem;
+  width: 3rem;
+  height: 3rem;
+  transform: translateX(-50%) translateY(-50%) scale(0, 0);
+  background-color: white;
+  border-width: .25rem;
+  border-style: solid;
+  position: absolute;
+  transition-timing-function: ease-in;
+  -webkit-transition-property: -webkit-filter, filter, opacity, border-color, width, height, transform;
+  transition-property: -webkit-filter, filter, opacity, border-color, width, height, transform;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  opacity: 0;
+  box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.poke-marker.active {
+  opacity: 1;
+}
+.poke-marker.rank-1 {
+  border-color: #8714A3;
+  z-index: 5;
+  transform: translateX(-50%) translateY(-50%) scale(1, 1);
+}
+.poke-marker.rank-2 {
+  border-color: #00C389;
+  z-index: 4;
+  transform: translateX(-50%) translateY(-50%) scale(0.9, 0.9);
+}
+.poke-marker.rank-3 {
+  border-color: #82C600;
+  z-index: 3;
+  transform: translateX(-50%) translateY(-50%) scale(0.8, 0.8);
+}
+.poke-marker.rank-4 {
+  border-color: #D0DF00;
+  z-index: 2;
+  transform: translateX(-50%) translateY(-50%) scale(0.7, 0.7);
+}
+.poke-marker.rank-5 {
+  border-color: #A7A8AA;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transform: translateX(-50%) translateY(-50%) scale(0.6, 0.6);
+  z-index: 1;
+}
+.poke-marker.rank-null {
+  border-color: red;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transform: translateX(-50%) translateY(-50%) scale(0.5, 0.5);
+  z-index: 0;
+}
+#loading {
+  float: right;
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  -webkit-transition-property: bottom, background-color;
+  transition-property: bottom, background-color;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  overflow: hidden;
+  height: 3rem;
+}
+#loading.up {
+  top: -3.1rem;
+}
+#loading.down {
+  top: 0;
+}
+#loading #info-loadingName {
+  color: #000000;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-left: .25rem;
+  font-size: 1.05rem;
+  font-family: 'League Spartan';
+  animation: blinker 3s linear infinite;
+}
+#loading #pokemon {
+  display: block;
+  float: left;
+  padding-top: .25rem;
+  padding-left: .5rem;
+  width: 75px;
+  height: 53.1px;
+}
+.center {
+  text-align: center;
+}

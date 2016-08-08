@@ -1,0 +1,41 @@
+CLIENT TO SERVER API
+
+POLL FOR POKEMON IN THE AREA
+/poll?lat=number&lng=number
+BODY: <empty>
+RESPONSE:
+[{
+  id: name,
+  name: string,
+  number: int,
+  position: {
+    lat: float,
+    lng: float,
+  }
+  ttl: int (seconds)
+}]
+
+GIVE ME THE RANK FOR ALL THESE POKEMON
+/rank?lat=number&lng=number
+BODY:
+[{
+  id: name,
+  name: string,
+  number: int,
+  position: {
+    lat: float,
+    lng: float,
+  }
+  ttl: int (seconds)
+}]
+RESPONSE:
+[int]
+
+GIVE ME THE UBER DATA FOR THIS PARTICULAR POKEMON
+/tap?slat=number&slng=number&dlat=number&dlng=number
+BODY: <empty>
+RESPONSE:
+{
+  uberPrice: int,
+  uberTime: ???
+}

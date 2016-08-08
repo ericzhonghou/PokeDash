@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>PokeMap</title>
+    <link rel="stylesheet" type="text/css" href="resources/fonts/leaguespartan/stylesheet.css"></style>
+    <link rel="stylesheet" type="text/css" href="resources/fonts/junction/stylesheet.css"></style>
+    <link rel="stylesheet" type="text/css" href="resources/fonts/icomoon/style.css"></style>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css"></style>
+    <!-- <link rel="stylesheet/less" type="text/css" href="resources/css/style.less"></style> -->
+    <!-- <script src="less.min.js"></script> -->
+  </head>
+  <body>
+    <div id="loading" class="down">
+      <img id="pokemon" src="resources/images/p.gif" alt="HTML5 Icon"></img>
+      <div id="info-loadingName"></div>
+    </div>
+    <div id="container" class="info-off">
+      <div id="map-container">
+        <div id="map"></div>
+      </div>
+      <div id="info">
+        <div id="info-title">
+          <div id="info-name"></div>
+        </div>
+        <div id="info-subtitle">
+          <div id="info-number"></div>
+          <div id="info-time-to-live"></div>
+        </div>
+        <div class="center">
+          <a id="uber-button" href="https://m.uber.com/ul/">Take an Uber</a>
+        </div>
+        <div id="uber-info" class="center">
+          <div class="info-icon">$</div>
+          <div id="uber-cost" class="uber"></div>
+          <div class="info-icon">t</div>
+          <div id="uber-time" class="uber"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
