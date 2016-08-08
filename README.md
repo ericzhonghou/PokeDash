@@ -31,6 +31,8 @@ Ultimately, this project serves as a proof of concept to demonstrate the power, 
 <h3>Technologies Used</h3>
 
 Microsoft Service Fabric
+
 Consul
+
 MS Paint
 
