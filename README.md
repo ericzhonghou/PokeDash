@@ -15,7 +15,8 @@ PokeDash aims to solve this problem and enhance one's game play experience by ma
 <h3>How does it work?</h3>
 This application consists of four microservices.
 <h4>PokeScan</h4>
-Extracts live data from game servers to locate all the Pokemon near a person's geolocation
+~Extracts live data from game servers to locate all the Pokemon near a person's geolocation~
+Generates a random Pokemon from the Pokedex, giving the Pokemon a random location and time to live. Niantic's recent antics made the original function of PokeScan too difficult to figure out. (This will likely be investigated further at a later time.)
 <h4>PokeUber</h4>
 Uses Uber's API to calculate the travel time and cost of reaching each nearby Pokemon from a person's current location
 <h4>PokeRank</h4>
@@ -37,4 +38,4 @@ Consul
 MS Paint
 
 <h3>Screenshots</h3>
-![alt-text-1](resources/poke2.png "Loading Screen") ![alt-text-2](resources/poke3.png "Omg a Pokemon!") ![alt-text-3](resources/poke4.png "Call an Uber")
+![alt-text-1](resources/poke1.png "Loading Screen ft. Cute Pikachu") ![alt-text-2](resources/poke3.png "Omg it's a Charzard!") ![alt-text-3](resources/poke4.png "Uber! Cost! Pokemon Data!")
