@@ -37,5 +37,4 @@ Consul
 MS Paint
 
 <h3>Screenshots</h3>
-<span> <img src="resources/poke2.png"/> <img src="resources/poke3.png"/><img src="resources/poke4.png"/>
-
+<span> <img src="resources/poke2.png"/> <img src="resources/poke3.png"/><img src="resources/poke4.png"/> </span>
