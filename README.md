@@ -39,4 +39,4 @@ Consul
 MS Paint
 
 <h3>Screenshots</h3>
-<span>![alt-text-1](resources/poke1.png "Loading Screen ft. Cute Pikachu")        ![alt-text-1](resources/poke2.png "Oh look a Pokemon appeared!")        ![alt-text-2](resources/poke3.png "Omg it's a Charzard!")        ![alt-text-3](resources/poke4.png "Uber! Cost! Pokemon Data!")</span>
+<span>![alt-text-1](resources/poke1.png "Loading Screen ft. Cute Pikachu") ![alt-text-4](resources/poke2.png "Oh look a Pokemon appeared!") ![alt-text-2](resources/poke3.png "Omg it's a Charzard!") ![alt-text-3](resources/poke4.png "Uber! Cost! Pokemon Data!")</span>
