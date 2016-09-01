@@ -37,4 +37,4 @@ Consul
 MS Paint
 
 <h3>Screenshots</h3>
-<span> <img src="resources/poke2.png"/> <img src="resources/poke3.png"/><img src="resources/poke4.png"/> </span>
+![alt-text-1](resources/poke2.png "Loading Screen") ![alt-text-2](resources/poke3.png "Omg a Pokemon!") ![alt-text-3](resources/poke4.png "Call an Uber")
